@@ -1,0 +1,23 @@
+<div style="padding:1rem">
+
+    <h1>Employee Details</h1>
+
+</div>
+
+<div *ngFor="let employee of employees; let i = index" style="padding:1rem">
+  
+    <p> 
+        Name: {{employee.name}}<br>
+        Age: {{employee.age}}<br>
+        Start Date: {{employee.startDate}}<br>
+        Position: {{employee.startDate}}<br>
+
+    </p>
+
+    <button (click)="showCareerGoals(employee.id)">Show Career Goals</button>
+
+    <p id="{{i}}_employee">...</p>
+
+</div>
+
+<hr>
